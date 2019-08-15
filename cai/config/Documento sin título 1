@@ -1,0 +1,25 @@
+from __future__ import unicode_literals
+from frappe import _
+
+def get_data():
+    return [
+      {
+        "label":_("CAI"),
+        "icon": "octicon octicon-note",
+        "items": [
+            {
+              "type": "doctype",
+              "name": "CAI",
+              "label": _("CAI"),
+              "description": _("This module is for create new CAIs."),
+            },
+	    {
+              "type": "doctype",
+              "name": "GType_Document",
+              "label": _("GType_Document"),
+              "description": _("This doctype is for create new types of documents."),
+            }
+          ]
+      }
+  ]
+

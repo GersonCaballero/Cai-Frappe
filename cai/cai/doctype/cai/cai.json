@@ -1,0 +1,87 @@
+{
+ "creation": "2019-07-04 15:27:27.226357",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_cai",
+  "type_document",
+  "cai",
+  "prefix",
+  "initial_range",
+  "final_rank",
+  "date_limit_edition"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_cai",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name CAI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_document",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tyoe of document",
+   "options": "Credit note\nDebit note\nSales invoice\nReferral Guide\nReceipt for fee\nBill of sale\nTicket purchase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cai",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "CAI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prefix",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Prefix",
+   "reqd": 1
+  },
+  {
+   "fieldname": "initial_range",
+   "fieldtype": "Int",
+   "label": "Initial Range",
+   "reqd": 1
+  },
+  {
+   "fieldname": "final_rank",
+   "fieldtype": "Int",
+   "label": "Final Rank",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_limit_edition",
+   "fieldtype": "Date",
+   "label": "Date Limit Of Edition",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-07-04 15:48:43.370421",
+ "modified_by": "Administrator",
+ "module": "CAI",
+ "name": "CAI",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
